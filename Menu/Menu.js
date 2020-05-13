@@ -48,7 +48,5 @@ document.querySelector(".header").prepend(menuMaker(menuItems));
 
 document.querySelector("img.menu-button").addEventListener("click", (e) => {
   const menu = document.querySelector("div.menu");
-  if (menu.classList.contains("menu--open"))
-    menu.classList.remove("menu--open");
-  else menu.classList.add("menu--open");
+  menu.classList.toggle("menu--open");
 });
